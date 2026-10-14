@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<title>Сводка</title>
+<meta name="description" content="Сводки СВО и других конфликтов: лента, карта, таймлапс фронта, история войн">
+<meta name="theme-color" content="#0B0D12">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Сводка">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app" id="app">
+  <main id="screens">
+    <section class="screen" id="s-feed"></section>
+    <section class="screen" id="s-world" hidden></section>
+    <section class="screen map-screen" id="s-map" hidden></section>
+    <section class="screen map-screen" id="s-timelapse" hidden></section>
+    <section class="screen" id="s-wars" hidden></section>
+    <section class="screen" id="s-sources" hidden></section>
+  </main>
+  <nav class="nav" id="nav">
+    <button data-t="feed" aria-current="page">Лента</button>
+    <button data-t="world">Мир</button>
+    <button data-t="map">Карта</button>
+    <button data-t="timelapse">Таймлапс</button>
+    <button data-t="wars">Войны</button>
+  </nav>
+  <div class="dialog-back" id="dialog" hidden></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
